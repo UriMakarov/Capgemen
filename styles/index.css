@@ -287,6 +287,10 @@ button {
   color: var(--second-text-color, #737373);
 }
 
+.welcome-section {
+  background-color: var(--color-yellow, #F9E285);
+}
+
 .flex {
   display: flex;
 }
