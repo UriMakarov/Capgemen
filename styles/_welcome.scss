@@ -1,3 +1,61 @@
-.welcome-section{
+.welcome-section {
     background-color: var(--color-yellow, #F9E285);
+
+    &__grid {
+        display: grid;
+        grid-template: auto / auto auto auto auto auto;
+
+        @include mq('tablet') {
+            grid-template: auto auto /auto;
+
+        }
+    }
+}
+
+.grid {
+
+    &__text {
+        align-self: center;
+        text-align: center;
+
+    }
+
+    &__text-title {
+        
+        margin: 0 5vw;
+        color: var(--text-color, #252B42);
+        font-family: Montserrat;
+        font-size: 58px;
+        font-style: normal;
+        font-weight: 800;
+        line-height: 80px;
+        /* 137.931% */
+        letter-spacing: 0.2px;
+
+        @include mq('tablet-wide') {
+            color: var(--text-color, #252B42);
+            text-align: center;
+            /* h2 */
+            font-family: Montserrat;
+            font-size: 40px;
+            font-style: normal;
+            font-weight: 700;
+            line-height: 57px;
+            /* 142.5% */
+            letter-spacing: 0.2px;
+
+        }
+
+    }
+
+    &__text-subtitle {
+        margin: 35px 5vw;
+        color: var(--second-text-color, #737373);
+    }
+
+
+    &__image {
+        width: 100%;
+    }
+
 }

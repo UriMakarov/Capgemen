@@ -175,6 +175,25 @@ button {
   letter-spacing: 0.2px;
 }
 
+.h4 {
+  font-family: Montserrat;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 30px;
+  /* 150% */
+  letter-spacing: 0.2px;
+}
+
+.h5 {
+  font-family: Montserrat;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 24px; /* 150% */
+  letter-spacing: 0.1px;
+}
+
 .link {
   font-family: Montserrat;
   font-size: 14px;
@@ -192,6 +211,16 @@ button {
   font-weight: 400;
   line-height: 45px;
   /* 150% */
+  letter-spacing: 0.2px;
+}
+
+.paragraph {
+  text-align: center;
+  font-family: Montserrat;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 20px; /* 142.857% */
   letter-spacing: 0.2px;
 }
 
@@ -289,6 +318,94 @@ button {
 
 .welcome-section {
   background-color: var(--color-yellow, #F9E285);
+}
+.welcome-section__grid {
+  display: grid;
+  grid-template: auto/auto auto auto auto auto;
+}
+@media only screen and (max-width: 767px) {
+  .welcome-section__grid {
+    grid-template: auto auto/auto;
+  }
+}
+
+.grid__text {
+  align-self: center;
+  text-align: center;
+}
+.grid__text-title {
+  margin: 0 5vw;
+  color: var(--text-color, #252B42);
+  font-family: Montserrat;
+  font-size: 58px;
+  font-style: normal;
+  font-weight: 800;
+  line-height: 80px;
+  /* 137.931% */
+  letter-spacing: 0.2px;
+}
+@media only screen and (max-width: 1023px) {
+  .grid__text-title {
+    color: var(--text-color, #252B42);
+    text-align: center;
+    /* h2 */
+    font-family: Montserrat;
+    font-size: 40px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 57px;
+    /* 142.5% */
+    letter-spacing: 0.2px;
+  }
+}
+.grid__text-subtitle {
+  margin: 35px 5vw;
+  color: var(--second-text-color, #737373);
+}
+.grid__image {
+  width: 100%;
+}
+
+.why-section {
+  background-color: var(--light-text-color, #FFFFFF);
+}
+.why-section__title {
+  color: var(--text-color, #252B42);
+  margin-top: 100px;
+  margin-bottom: 10px;
+}
+.why-section__subtitle {
+  color: var(--second-text-color, #737373);
+  text-align: center;
+  margin-bottom: 80px;
+}
+.why-section__cards {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 30px;
+}
+@media only screen and (max-width: 767px) {
+  .why-section__cards {
+    flex-direction: column;
+  }
+}
+.why-section__card {
+  display: flex;
+  max-width: 325px;
+  width: 100%;
+  padding: 30px 40px;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+  border-radius: 5px;
+  background: #F9F9F9;
+  box-shadow: 0px 13px 19px 0px rgba(0, 0, 0, 0.07);
+}
+.why-section .azure-card {
+  background-color: var(--secondary-color-1, #00A0C1);
+  color: var(--light-text-color, #FFF);
 }
 
 .flex {
