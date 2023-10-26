@@ -5,12 +5,21 @@
         color: var(--text-color, #252B42);
         margin-top: 100px;
         margin-bottom: 10px;
+    
     }
 
     &__subtitle {
         color: var(--second-text-color, #737373);
-        text-align: center;
         margin-bottom: 80px;
+        max-width: 470px;
+
+        margin-left: auto;
+        margin-right: auto;
+        @include mq('phone-wide') {
+            margin-left: 5vw;
+            margin-right: 5vw;
+        }        
+
     }
 
     &__cards {
@@ -19,10 +28,11 @@
         justify-content: center;
         align-items: center;
         gap: 30px;
+        margin-bottom: 100px;
+
         @include mq('tablet') {
             flex-direction: column;
         }
-
     }
 
     &__card {
@@ -35,12 +45,12 @@
         gap: 10px;
         border-radius: 5px;
         background: #F9F9F9;
-        box-shadow: 0px 13px 19px 0px rgba(0, 0, 0, 0.07); 
+        box-shadow: 0px 13px 19px 0px rgba(0, 0, 0, 0.07);
 
     }
 
     .azure-card {
         background-color: var(--secondary-color-1, #00A0C1);
-        color: var(--light-text-color, #FFF); 
+        color: var(--light-text-color, #FFF);
     }
 }

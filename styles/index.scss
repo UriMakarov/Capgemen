@@ -5,6 +5,11 @@
 @import "./_header.scss";
 @import "./welcome.scss";
 @import "./_why.scss";
+@import "./_advice.scss";
+@import "./_service.scss";
+@import "./_partners.scss";
+@import "./_mail.scss";
+
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800&display=swap');
 
 .flex {
@@ -29,4 +34,11 @@
   
   a {
     text-decoration: none;
+  }
+
+  body {
+
+    &.hidden {
+      overflow-y: hidden;
+    }
   }

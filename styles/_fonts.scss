@@ -9,6 +9,7 @@
 }
 
 .h2 {
+  color: var(--text-color, #252B42);
   font-family: Montserrat;
   font-size: 40px;
   font-style: normal;
@@ -28,13 +29,25 @@
   letter-spacing: 0.2px;
 }
 
-.h5{
+.h5 {
   font-family: Montserrat;
   font-size: 16px;
   font-style: normal;
   font-weight: 700;
-  line-height: 24px; /* 150% */
-  letter-spacing: 0.1px; 
+  line-height: 24px;
+  /* 150% */
+  letter-spacing: 0.1px;
+}
+
+.h6 {
+  color: var(--second-text-color, #737373);
+  font-family: Montserrat;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 24px;
+  /* 171.429% */
+  letter-spacing: 0.2px;
 }
 
 .link {
@@ -58,12 +71,13 @@
   letter-spacing: 0.2px;
 }
 
-.paragraph{
-text-align: center;
-font-family: Montserrat;
-font-size: 14px;
-font-style: normal;
-font-weight: 500;
-line-height: 20px; /* 142.857% */
-letter-spacing: 0.2px;
+.paragraph {
+  text-align: center;
+  font-family: Montserrat;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 20px;
+  /* 142.857% */
+  letter-spacing: 0.2px;
 }
