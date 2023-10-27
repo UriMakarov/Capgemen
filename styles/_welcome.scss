@@ -10,6 +10,35 @@
 
         }
     }
+
+    &__buttons {
+        gap: 10px;
+        margin-bottom: 40px;
+        justify-content: center;
+        text-align: center;        
+
+
+
+        @include mq('tablet-wide') {
+            flex-direction: column;
+            align-items: center;
+        }
+
+    }
+
+    &__btn-get {
+        background: var(--secondary-color-1, #00A0C1);
+        color: var(--light-text-color, #FFF);
+        text-align: center;
+
+    }
+
+    &__btn-learn {
+        border: 1px solid var(--secondary-color-1, #00A0C1);
+        color: var(--secondary-color-1, #00A0C1);
+        text-align: center;
+
+    }
 }
 
 .grid {

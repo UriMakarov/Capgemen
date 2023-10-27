@@ -9,6 +9,10 @@
 @import "./_service.scss";
 @import "./_partners.scss";
 @import "./_mail.scss";
+@import "./_get.scss";
+@import "./_consult.scss";
+@import "./_footer.scss";
+
 
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800&display=swap');
 
@@ -41,4 +45,11 @@
     &.hidden {
       overflow-y: hidden;
     }
+  }
+
+  .button{
+    padding: 10px 36px;
+    border-radius: 37px;
+    max-width: 185px;
+
   }
