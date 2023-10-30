@@ -43,6 +43,10 @@
         height: 100%;
         align-self: center;
         margin-left: 5vw;
+
+        @include mq('tablet') {
+            margin-left: 0;
+        }
     }
 
     &__text {

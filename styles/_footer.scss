@@ -2,7 +2,7 @@
     &__grid {
         background: var(--secondary-color-2, #16697A);
         display: grid;
-        grid-template: 1fr / repeat(5, auto);
+        grid-template: auto / repeat(5, auto);
         padding: 50px 10vw;
         
         column-gap: 30px;
@@ -14,7 +14,7 @@
         }
 
         @include mq('phone-wide') {
-            grid-template: 1fr 1fr / 1fr 1fr;
+            grid-template: auto auto auto / auto auto;
         }
 
         @include mq('phone') {
@@ -47,9 +47,17 @@
     }
 
     &__social-panel{
-        padding: 25px 195px;
+        padding: 25px 10vw;
         color: var(--second-text-color, #737373);
+        gap: 10vw;
+                @include mq('phone-wide') {
+                    flex-direction: column;
+                    }
+    }
 
-        
+    &__social-links{
+        display: flex;
+        gap: 20px;
+
     }
 }
