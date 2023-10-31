@@ -9,12 +9,44 @@
 }
 
 .h2 {
+  color: var(--text-color, #252B42);
   font-family: Montserrat;
   font-size: 40px;
   font-style: normal;
   font-weight: 700;
   line-height: 57px;
   /* 142.5% */
+  letter-spacing: 0.2px;
+}
+
+.h4 {
+  font-family: Montserrat;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 30px;
+  /* 150% */
+  letter-spacing: 0.2px;
+}
+
+.h5 {
+  font-family: Montserrat;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 24px;
+  /* 150% */
+  letter-spacing: 0.1px;
+}
+
+.h6 {
+  color: var(--second-text-color, #737373);
+  font-family: Montserrat;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 24px;
+  /* 171.429% */
   letter-spacing: 0.2px;
 }
 
@@ -36,5 +68,26 @@
   font-weight: 400;
   line-height: 45px;
   /* 150% */
+  letter-spacing: 0.2px;
+}
+
+.paragraph {
+  text-align: center;
+  font-family: Montserrat;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 20px;
+  /* 142.857% */
+  letter-spacing: 0.2px;
+}
+
+.btn-text {
+  font-family: Montserrat;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 28px;
+  /* 200% */
   letter-spacing: 0.2px;
 }
